@@ -1,0 +1,20 @@
+[package]
+name = "red"
+version = "0.1.0"
+authors = ["but0n <>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+wgpu = "0.5.2"
+winit = { version = "0.22.1", features = ["web-sys"] }
+shaderc = "*"
+futures = "*"
+cgmath = "0.17.0"
+specs = { version = "0.16.1", features = ["specs-derive"] }
+bytemuck = "1.2.0"
+
+[dependencies.gltf]
+version = "0.15"
+features = ["extras", "names"]
